@@ -1,0 +1,66 @@
+.navbar{
+    display: flex;
+    width: 100vw;
+    background-color: black;
+    height: 8vh;
+    color: white;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+.navbar ul {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 2vw;
+    list-style: none;
+}
+
+.navbar li{
+    width: 6vw;
+}
+
+.navbar li:hover{
+    cursor: pointer;
+}
+
+.navbar div{
+    width: 50%;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo:hover{
+    cursor: pointer;
+}
+
+.navbar div h1{
+    color: white;
+    margin-left: 4vw;
+    font-size: xx-large;
+    letter-spacing: 0.6vw;
+}
+.navbar h1 span{
+    color: orange;
+}
+
+.navbar ul span{
+    background: linear-gradient(to right, black, orange);
+    z-index: -1;
+    width: 6vw;
+    left: 90.5vw;
+    transition: left 0.5s;
+    border-radius: 20px;
+    height: 60%;
+    position: absolute;
+}
+
+
+@media only screen and (max-width: 1388px) {
+    .navbar{
+        display: none;
+    }
+}

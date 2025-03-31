@@ -1,0 +1,278 @@
+.contact{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: row;
+    gap: 20%;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 6vw;
+    padding-right: 6vw;
+    background: linear-gradient(to bottom, #b38b00 0%, #b38b00 10%, black 40%, black 100%);
+
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 40%;
+    padding: 20px;
+    gap: 4vh;
+    height: 80%;
+    color: white;
+    position: relative;
+    background-color: rgba(45,45,45,1);
+}
+
+.mainHead {
+    color: white;
+    border-bottom: 2px solid darkgoldenrod ;
+    padding-bottom: 10px;
+    width: 6vw;
+    text-wrap: nowrap;
+    letter-spacing: 0.3vw;
+    font-size: xx-large;
+}
+.right{
+    display: flex;
+    color: white;
+    box-sizing: border-box;
+    width: 40%;
+    border-radius: 20px;
+    height: 80%;
+    background-color: rgba(45,45,45,1);
+}
+.contactCategories{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 20%;
+    gap: 4vh;
+}
+
+.contactCategories img{
+    width: 50px;
+}
+
+.contactIcons img{
+    width: 50px;
+}
+
+.contactIcons{
+    width: 100%;
+    display: flex;
+    height: fit-content;
+    gap: 2vw;
+    margin-top: 4vh;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50% ;
+}
+
+.contactIcons img:hover {
+    cursor: pointer;
+}
+.curver{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    border-radius: 20px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30vh;
+}
+
+.curver img {
+    width: 20%;
+    opacity: 0.5;
+}
+.phone{
+    display: flex;
+    width: 80%;
+    gap: 4vw !important;
+    align-items: center;
+    height: 8vh;
+}
+.phoneDescSec{
+   margin-right: 8vw;
+   display: flex;
+   flex-direction: column;
+   gap: 2vh;
+}
+
+.emailDescSec {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.email {
+    display: flex;
+    width: 80%;
+    gap: 4vw !important;
+    align-items: center;
+    height: 8vh;
+}
+
+form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 3vh;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+form input, form textarea{
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+input {
+    height: 6vh;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+textarea{
+    box-sizing: border-box;
+    padding: 20px;
+    resize: none;
+}
+
+#button {
+    border: none;
+    background-color: #b38b00;
+    width: 8vw;
+    border-radius: 30px;
+    padding: 10px;
+    color: white;
+}
+
+#button:hover {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 876px) {
+    h1{
+        font-size: smaller;
+    }
+
+    .contactCategories img{
+        width: 30px;
+    }
+
+    .contactIcons img{
+        width: 30px;
+    }
+
+    #button{
+        width: 20vw;
+    }
+
+    .contact {
+        gap: 0vw;
+    }
+    .left{
+        width: 50vw !important;
+        text-wrap: wrap;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    .right{
+        width: 50vw !important;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .curver{
+        display: none;
+    }
+ }
+
+
+@media only screen and (max-width: 590px) {
+    h1{
+        font-size: small;
+    }
+    .left{
+        width: 50%;
+        box-sizing: border-box;
+        margin-top: 4vh;
+        height: 100%;
+    }
+    .right{
+        width: 50%;
+        height: 100%;
+        box-sizing: border-box;
+        margin-top: 4vh;
+    }
+    .phoneDesc,.emailDesc{
+        font-size: x-small;
+    }
+
+    .mainHead{
+        font-size: large;
+    }
+}
+
+@media only screen and (max-width: 402px) {
+
+    .left{
+        width: 50%;
+        box-sizing: border-box;
+        margin-top: 4vh;
+        border-top-left-radius: 0px;
+        height: 100%;
+        justify-content: center;
+    }
+    .right{
+        width: 50%;
+        height: 100%;
+        box-sizing: border-box;
+        border-top-right-radius: 0px;
+        margin-top: 4vh;
+        justify-content: center !important;
+    }
+    form{
+        margin-top: 5vh;
+        justify-content: center;
+    }
+
+    #button{
+        width: 110px;
+    }
+    
+}
+
+
+@media only screen and (max-height: 666px) {
+   .contact{
+    height: 150vh;
+   }
+
+   h1{
+    font-size: small;
+   }
+
+   .contactCategories img{
+    width: 25px;
+   }
+
+    .contactIcons img{
+    width: 25px;
+   }
+
+   #button{
+    height: 300px;
+   }
+}

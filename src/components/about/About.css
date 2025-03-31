@@ -1,0 +1,226 @@
+.about{
+    box-sizing: border-box;
+    width: 100vw;
+    height: 94vh;
+    padding-top: 8vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, black, #b38b00);
+    color: white;
+}
+
+.heading{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading h1{
+    background: linear-gradient(to right, #ff6f00, #00c853);
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 0.3vw;
+    font-size: xx-large;
+}
+
+.mainContent{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4vh;
+}
+
+.mainContent div{
+    background-color: rgba(45,45,45,1);
+    width: 80%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    gap: 20%;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 20px;
+}
+
+
+.mainContent button{
+    border: none;
+    padding: 20px;
+    position: relative;
+    background: linear-gradient(to right, rgba(45, 45, 45, 1), rgba(255, 235, 59, 0.541));
+    border-radius: 50px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.mainContent span {
+    color: white;
+}
+
+.mainContent span:hover{
+    color: var(--clr);
+    text-shadow: 0 0 15px var(--clr),
+    0 0 40px var(--clr);
+}
+
+.mainContent button::before {
+    content: '';
+    position: absolute;
+    top: var(--y);
+    left: var(--x);
+    transform: translate(-50%,-50%);
+    width: 200px;
+    height: 200px;
+    transition: 0.5s,top 0s,left 0s;
+    background: radial-gradient(var(--clr),transparent,transparent);
+    opacity: 0;
+}
+
+.mainContent button:hover::before {
+   opacity: 0.5;
+}
+
+.mainContent button::after{
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: rgba(45,45,45,0.5);
+    border-radius: 48px;
+}
+
+.skillBox figure{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skillBox .progressBar{
+    width: 40%;
+    margin-right: 4vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+
+.skillBox img {
+    width: 10%;
+}
+
+.outer {
+    background-color: black !important;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 2vh !important;
+    position: relative;
+}
+
+.outer .inner{
+    position: absolute;
+    left: 0;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.outer .js{
+    background: linear-gradient(to right, #00c853, #ffeb3b);
+    width: 80%;
+}
+
+.outer .react{
+    background: linear-gradient(to right, #00c853, #ffeb3b);
+    width: 90%;
+}
+
+.outer .mongo{
+    background: linear-gradient(to right, #00c853, #ffeb3b);
+    width: 70%;
+}
+
+.outer .css{
+    background: linear-gradient(to right, #00c853, #ffeb3b);
+    width: 90%;
+}
+
+.desc{
+    width: 100%;
+    color: white;
+    height: fit-content !important;
+    display: flex !important;
+    justify-content: space-between !important;
+}
+
+.desc h1{
+    font-size: large;
+}
+
+.curveCreator{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+@media only screen and (max-width: 976px) {
+    .mainContent button{
+        border-radius: 10px;
+        width: 150px !important;
+    }
+
+    .mainContent button::before{
+        display: none;
+    }
+
+    .mainContent button::after{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 754px) {
+   .skillBox h1{
+    font-size: smaller;
+   }
+   .skillBox img{
+    width: 30px;
+   }
+
+   .progressBar{
+    height: 30px !important;
+   }
+
+   .outer{
+    height: 30px !important;
+   }
+}
+
+@media only screen and (max-width: 484px) {
+    .skillBox h1{
+     font-size: x-small;
+    }
+
+    .progressBar{
+        height: 20px !important;
+       }
+    
+       .outer{
+        height: 20px !important;
+       }
+    
+ }
+
+ @media only screen and (max-height: 666px){
+    .about{
+        height: 150vh;
+    }
+ }
