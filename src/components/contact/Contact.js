@@ -8,7 +8,7 @@ const Contact = (props) => {
   }
 
   const openFb = () => {
-    window.open("https://www.instagram.com/prince.bajagain/", "_blank");
+    window.open("https://www.facebook.com/prince.homa.773", "_blank");
   }
 
   const openWhatsapp = () => {
