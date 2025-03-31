@@ -39,7 +39,7 @@ const Home = (props) => {
           <div className="chatLink" onClick={openInsta}>
             <span>Access Me Via Instagram.</span>
             <div id="icon">
-                <img src="/black-instagram-icon.png" alt="" />
+                <img src="./public/black-instagram-icon.png" alt="" />
             </div>
           </div>
 
