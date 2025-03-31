@@ -24,30 +24,30 @@ const Contact = (props) => {
          <div className="contactCategories">
             <div className="phone">
                 <figure>
-                    <img src="/telephone.svg" alt="" />
+                    <img src={`${process.env.PUBLIC_URL}/telephone.svg`} alt="Phone Icon" />
                 </figure>
                 <div className="phoneDescSec">
                     <h1>Phone</h1>
-                    <div  className="phoneDesc">+9779708090851</div>
+                    <div className="phoneDesc">+9779708090851</div>
                 </div>
             </div>
             <div className="email"> 
                 <figure>
-                    <img src="/email.svg" alt="" />
+                    <img src={`${process.env.PUBLIC_URL}/email.svg`} alt="Email Icon" />
                 </figure>
                 <div className="emailDescSec">
                   <h1>Email</h1>
-                  <div  className="emailDesc">princebgn123@gmail.com</div>
+                  <div className="emailDesc">princebgn123@gmail.com</div>
                 </div>
             </div>
          </div>
          <div className="contactIcons">
-            <img src="/facebook.svg" onClick={openFb} alt="" />
-            <img src="/insta.svg" alt="" onClick={openInsta}/>
-            <img src="/whatsapp.svg" onClick={openWhatsapp} alt="" />
+            <img src={`${process.env.PUBLIC_URL}/facebook.svg`} onClick={openFb} alt="Facebook Icon" />
+            <img src={`${process.env.PUBLIC_URL}/insta.svg`} alt="Instagram Icon" onClick={openInsta}/>
+            <img src={`${process.env.PUBLIC_URL}/whatsapp.svg`} onClick={openWhatsapp} alt="Whatsapp Icon" />
          </div>
          <div className="curver">
-          <img src="/bg-yellow.svg" alt="" />
+          <img src={`${process.env.PUBLIC_URL}/bg-yellow.svg`} alt="Background Curve" />
          </div>
        </div>
        <div className="right">
@@ -63,4 +63,4 @@ const Contact = (props) => {
   )
 }
 
-export default Contact
+export default Contact;
